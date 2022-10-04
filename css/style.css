@@ -31,6 +31,7 @@ body{
 .flickr-sprite{
 	background: url(../images/sprite.png) no-repeat;
 	display: inline-block;
+	cursor: pointer;
 }
 
 .flickr-icon1{
@@ -165,6 +166,41 @@ body{
 	opacity: .5;
 }
 
+.little-dd{
+	background-position: -1055px -214px;
+	width: 18px;
+	height: 12px;
+	transform: scale(.5);
+}
+
+.thumb-view-1{
+	background-position: -441px -1023px;
+	width: 32px;
+	height: 32px;
+	transform: scale(.5);
+}
+
+.thumb-view-2 .active{
+	background-position: -441px -1023px;
+	width: 36px;
+	height: 32px;
+	transform: scale(.5);
+}
+
+.thumb-view-2{
+	background-position: -378px -953px;
+	width: 36px;
+	height: 32px;
+	transform: scale(.5);
+}
+
+.thumb-view-3{
+	background-position: -453px -953px;
+	width: 36px;
+	height: 32px;
+	transform: scale(.5);
+}
+
 /*Sprite Styles Ends*/
 
 .disN{
@@ -188,7 +224,7 @@ body{
 	display: flex;
 	justify-content: space-between;
     height: 50px;
-    width: 92vw;
+    width: 88vw;
     margin: auto 3vw;
 }
 
@@ -280,7 +316,7 @@ form:focus-within input{
 	box-shadow: 1px 1px 1px #00000042;
 	position: fixed;
     top: 50px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .sub-header-one{
@@ -420,6 +456,63 @@ form:focus-within input{
 
 /*Second Header Wrap Ends*/
 
+/*Third Header Wrap Starts*/
+
+.third-header, .fourth-header{
+    position: relative;
+    top: 145px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	width: 100vw;
+}
+
+.third-header ul{
+    width: 90vw;
+    margin: auto 131px;
+    display: flex;
+    align-items: center;
+}
+
+.third-header li{
+	cursor: pointer;
+}
+
+.third-header li:nth-of-type(2), .third-header li:nth-of-type(6){
+	padding-right: 25px;
+}
+
+.third-header li:nth-of-type(4){
+	margin-right: auto;
+}
+
+.third-header a{
+	color: #898989;
+}
+/*Third Header Wrap Ends*/
+
+/*Fourth Header Wrap Starts*/
+
+.fourth-header ul{
+	display: flex;
+    justify-content: space-between;
+    width: 81vw;
+}
+
+.fourth-header ul li:last-child a:hover{
+	text-decoration: underline;
+}
+
+.fourth-header ul li:last-child a{
+    color: #006dac;
+}
+
+.fourth-header ul li:last-child{
+    margin-right: 10px;
+}
+/*Fourth Header Wrap Ends*/
+
 
 /*Image Gallery Css Starts*/
 .image-container{
@@ -428,7 +521,7 @@ form:focus-within input{
     align-items: center;
     justify-content: space-evenly;
 	position: relative;
-    top: 150px;
+    top: 135px;
     margin-bottom: 175px;
 	z-index: -1;
 }
